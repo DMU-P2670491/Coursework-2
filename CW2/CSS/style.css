@@ -1,0 +1,334 @@
+/*from here is styling applied for all the pages*/
+body{
+  background-color: #E5DCC3 /*this changed the whole background colour of the page*/
+}
+.logo{
+  float: left; /*this is so it stays to the left, on top of the title*/
+  width: 120px; /*this is the width of the image*/
+  height: 120px; /*this is the height of the image*/
+}
+.title{
+  color: #2B2B2B; /*this sets the colour of the title*/
+  font-family: 'Halimun',cursive, aria-label; /*changes the font*/
+  background-color: #AAA492; /*this sets the background colour of the title*/
+  text-align:center; /*this places the title text in the middle of the page*/
+  padding: 40px; /*this is how many pixles the title background (the beige section) will take up on the page*/
+}
+.navigation{
+  display: block; /*this allowed the two sections of the menu bar to be sperated*/
+    margin: 0; /*this removes excess space between the background of the menu bar and the edge of the page*/
+    padding: 0; /*this removes excess space between the background of the menu bar and the edge of the page*/
+    background-color: #AAA492 /*this is the background colour for the menu bar*/
+}
+ul {
+  list-style-type: none; /*removed the bulletpoints*/
+  overflow: hidden;
+}
+li {
+  float: left; /*this makes the navigation bar horizontal instead of vertical*/
+  font-family: 'Halimun',cursive, aria-label; /*changes the font*/
+}
+li a {
+  display: block; /*displays each link as a block rather than bulletpoint*/
+  color: #2B2B2B; /*the colour of the text*/
+  text-align: center; /*makes sure the text is in the centre of the navigation bar*/
+  padding: 18px 97px; /*the amount of space betwen each section*/
+  text-decoration: none; /*removed the underline of the linked pages*/
+}
+li a:hover {
+  background-color: #C7BEA2;} /*this changes the colour of the menu when you hover over each item*/
+p{
+  color: #2B2B2B; /*this sets the colour of the title*/
+  font-family: 'Halimun',cursive, aria-label; /*changes the font*/
+}
+.footer1{
+    text-align: center; /*this places the text in the middle of the line*/
+    margin-top: 100px; /*this created the 500px of space between the main body of the page and the footer*/
+  }
+  .footer2{
+    text-align: center; /*this place the text in the middle of the line*/
+  }
+  /*there are two seperate footers as there was a 50px gap needed for between the main body and the first line of the footer but
+  there was no need for a 50px gap between the first and second line of the footer*/
+/*this is where the styling ends for all page*/
+
+
+/*this is where styling for the home page begins*/
+.slideshow-container {
+  max-width: 1000px; /*doesn't allow the element to go over 1000px*/
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /*places arrows in the middle, of the edge*/
+  padding: 16px; /*space between the arrow and the edge of the slideshow*/
+  color: #9A9483; /*changes the colour of the arrow*/
+  transition: 0.6s ease;
+  border-radius: 3px /*additional space between the arrow and the edge of the slideshow*/
+}
+
+.next {
+  right: 0;
+}
+/*places the next button on the right*/
+
+.prev:hover, .next:hover {
+  background-color: #C7BEA2;
+}
+/*changes the background colour of the prev and next arrows onces hovered*/
+
+.text {
+  color: #2B2B2B; /*this sets the colour of the title*/
+  font-family: 'Halimun',cursive, aria-label; /*changes the font*/
+  font-size: 15px; /*the size of the text*/
+  padding: 8px 12px; /*the space around the text*/
+  position: absolute; /*fixes the position*/
+  bottom: 8px; /*places the text 8px from the bottom*/
+  width: 100%;
+  text-align: center; /*places the text in the centre*/
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px; /*the height of the dot*/
+  width: 15px; /*the width of the dot*/
+  margin: 5px; /*the amount of space between each dot*/
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block; /*places the dots on the same line*/
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/*changes the colour of the dots when they are hovered over*/
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*this adds a fading animation inbetween each image, lasting 1.5 seconds*/
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*decrease text size on smaller screens*/
+
+.slideshow_cheesecake, .slideshow_fruit_smoothie{
+  width: 850px; /*this is the width of the image*/
+  height:670px; /*this is the height of the image*/
+}
+/*this was added so all images were the same size*/
+
+.slideshow_prawns, .slideshow_cheesecake, .slideshow_fruit_smoothie{
+  margin-top: 15px; /*reates space between the slide show and the navigation bar*/
+  width: 100%; /*this is how large the images are for the slideshow*/
+}
+
+h2, h3, h4{
+  font-family: 'Halimun',cursive, aria-label; /*changes the font*/
+}
+.chicken_wings{
+  margin-right: 30px; /*this leaves 30px between the image and the text*/
+  width: 400px; /*this is how many pixles wide the picture is*/
+  height: 533px; /*this is how many pixles tall the images is*/
+  float: left; /*this allows the text to be placed next to the image*/
+}
+/*this is where styling for the home page ends*/
+
+
+/*this is where styling for the starters page begins*/
+  .prawns{
+    width: 650px; /*this is the width of the image*/
+    height:450px; /*this is the height of the image*/
+    margin-top: 25px;/*this is the amount of space between the navigation bar and the image*/
+  }
+  .salad{
+    width:650px; /*this is the width of the image*/
+    height:450px; /*this is the height of the image*/
+    margin-top: 25px;/*this is the amount of space between the navigation bar and the image*/
+    position: absolute; /*positions the element*/
+    right: 15px;
+  }
+  .starter_image_column {
+    float: left;
+    width: 33.33%; /*sets the space between each image*/
+    padding: 5px; /*sets the space around each image*/
+  }
+  /* Clearfix (clear floats) */
+  .starter_images_row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.h3_1{
+  text-align: left; /*positions text to the left*/
+  display: inline-block; /*place both text on the same line*/
+  padding-left:5px; /*a space of 5px from the edge of the webpage*/
+}
+.h3_2{
+  text-align: right; /*positions text to the right*/
+  display: inline-block; /*place both text on the same line*/
+  position: absolute; /*positions the element*/
+  right: 15px; /*positions the text to the right*/
+}
+.scandinavian{
+  width: 650px; /*this is the width of the image*/
+  height: 866px; /*this is the height of the image*/
+  margin-top: 25px;/*this is the amount of space between the navigation bar and the image*/
+}
+.potato{
+  width: 650px; /*this is the width of the image*/
+  height: 866px; /*this is the height of the image*/
+  margin-top: 25px;/*this is the amount of space between the images*/
+  position: absolute; /*positions the element*/
+  right: 20px;
+}
+/*this is where styling for the starters page ends*/
+
+
+/*this us where styling for the mains page starts*/
+.cauliflower_video{
+  width: 85%; /*this controls size of the video*/
+  display: block; /*this placed the video in the centre of the page*/
+  margin-left: auto; /*this creates space between the edge of the screen and the left side of the video*/
+  margin-right: auto; /*this creates space between the edge of the screen and the right side of the video*/
+}
+.cauliflower_image{
+  width: 400px; /*this is how wide the video is*/
+  height: auto; /*this is the height of the video relative (auto element) to the width*/
+  margin-top: 25px;/*this is the amount of space between the images*/
+  margin-left: 15px; /*this creates space between the edge of the screen and the left side of the image*/
+  float: left; /*this allows the text to be placed next to the image*/
+}
+.cauliflower_text{
+  margin-top: 20px; /*this is the space between the video and the text*/
+  margin-left: 425px; /*this is the space between the right side of the image and the left side of the text*/
+}
+.stirfry_video{
+  width: 85%; /*this controls size of the video*/
+  display: block; /*this placed the video in the centre of the page*/
+  margin-left: auto; /*this creates space between the edge of the screen and the right side of the video*/
+  margin-right: auto; /*this creates space between the edge of the screen and the left side of the video*/
+}
+.stirfry_image{
+  width: 575px; /*this is how wide the video is*/
+  height: auto; /*this is the height of the video relative (auto element) to the width*/
+  margin-top: 25px;/*this is the amount of space between the images*/
+  margin-left: 15px; /*this creates space between the edge of the screen and the left side of the image*/
+  float: left; /*this allows the text to be placed next to the image*/
+}
+.stirfry_text{
+  margin-top: 40px; /*this is the space between the video and the text*/
+  margin-left: 600px; /*this is the space between the right side of the image and the left side of the text*/
+}
+/*this is where styling for the mains page ends*/
+
+
+/*this is where styling for the desserts page starts*/
+.cheesecake_image{
+  width: 400px; /*this is the width of the image*/
+  height: 533px; /*this is the height of the image*/
+  margin-top: 10px;/*this is the amount of space between the navigation bar and the image*/
+  margin-left: 15px; /*this creates space between the edge of the screen and the left side of the image*/
+  margin-right: 20px; /*this creates space between the edge of the screen and the right side of the image*/
+  float: left; /*this allows the audio to be placed next to the image*/
+}
+.profiterole_image{
+  width: 400px; /*this is the width of the image*/
+  height: 533px; /*this is the height of the image*/
+  margin-top: 10px;/*this is the amount of space between the images*/
+  margin-left: 15px; /*this creates space between the edge of the screen and the left side of the image*/
+  margin-right: 20px; /*this creates space between the edge of the screen and the right side of the image*/
+  float: left; /*this allows the audio to be placed next to the image*/
+}
+.profiterole_heading{
+  margin-top: 130px
+}
+/*this is the space between the the previous image and text*/
+.profiterole_heading2{
+  margin-top: 25px;
+}
+/* this is the space between the text*/
+
+
+/*this is where styling for the drinks page begins*/
+.banana_smoothie_image{
+  width: 400px; /*this is the width of the image*/
+  height: 533px; /*this is the height of the image*/
+  margin-top: 6px;/*this is the amount of space between the navigation bar and the image*/
+  margin-left: 15px; /*this creates space between the edge of the screen and the left side of the image*/
+  margin-right: 20px; /*this creates space between the edge of the screen and the right side of the image*/
+  float: left; /*this allows the audio to be placed next to the image*/
+}
+.fruit_smoothie_image{
+  width: 400px; /*this is the width of the image*/
+  height: 533px; /*this is the height of the image*/
+  margin-top: 6px;/*this is the amount of space between the images*/
+  margin-left: 15px; /*this creates space between the edge of the screen and the left side of the image*/
+  margin-right: 20px; /*this creates space between the edge of the screen and the right side of the image*/
+  float: left; /*this allows the audio to be placed next to the image*/
+}
+.fruit_smoothie_heading{
+  margin-top: 400px
+}
+/*this is the space between the the previous image and text*/
+.fruit_smoothie_heading2{
+  margin-top: 25px;
+}
+/*this is where styling for the drinks page ends*/
+
+
+/*this is where styling for the contact page starts*/
+/*style inputs with type="text", select elements and textareas*/
+input[type=text], select, textarea {
+  width: 100%; /*this sets the width*/
+  font-family: 'Halimun',cursive, aria-label; /*changes the font*/
+  padding: 12px; /*space around the whole contact box*/
+  border: 1px solid #9A9483; /*changes bordercolour to dark brown*/
+  border-radius: 4px; /*rounded borders*/
+  box-sizing: border-box; /*ensures the padding and width stays in place*/
+  margin-top: 6px; /*this is the space at the top*/
+  margin-bottom: 16px; /*this is the space at the bottom*/
+  resize: vertical /*vertical instead of horizontal*/
+}
+input[type=submit] {
+  background-color: #AAA492; /*this changes the colour of the submit button*/
+  color: #E5DCC3;
+  padding: 12px 20px; /*this is the padding around the submit button*/
+  border: none;
+  border-radius: 4px; /*round boarder*/
+  cursor: pointer;
+}
+.container {
+  font-family: 'Halimun',cursive, aria-label; /*changes the font*/
+  margin-top: 20px; /*this creates space between the navigation bar and contact box*/
+  margin-left: 15px; /*this creates space between the edge of the screen and the left side of the contact box*/
+  margin-right: 15px; /*this creates space between the edge of the screen and the  right side of the image*/
+  border-radius: 5px;
+  background-color: #C7BEA2; /*the background colour of the contact bar*/
+  padding: 20px;
+}
+/*this is where styling for the contact page ends*/
+
+
+/*footer version two styling start here*/
+.footer_version_two1{
+    text-align: center; /*this places the text in the middle of the line*/
+    margin-top: 380px; /*this created the 500px of space between the main body of the page and the footer*/
+  }
+  .footer_version_two2{
+    text-align: center; /*this place the text in the middle of the line*/
+  }
+  /*there are two seperate footers as there was a 50px gap needed for between the main body and the first line of the footer but
+  there was no need for a 50px gap between the first and second line of the footer*/
+  /*a version two of the footer was needed in order for it to look the same one each page, due to the layout being different*/
+  /*footer version two styling enders here*/
